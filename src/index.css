@@ -1,0 +1,41 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@font-face {
+    font-family: "Rounded";
+    src: url("./assets/Rounded display St.ttf") format("truetype");
+  }
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants; 
+
+/* elements */
+html, body{
+
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}
+
+
+body{
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    background-image: url('./assets/SiteBackground.png');
+    height: 100%; 
+    width: 100%; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
