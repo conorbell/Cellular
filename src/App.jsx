@@ -16,11 +16,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <>
-      <section className="">
-        <MovieProvider>
-          <RouterProvider router={router} />
-        </MovieProvider>
-      </section>
+      <MovieProvider>
+        <RouterProvider router={router} />
+      </MovieProvider>
     </>
   );
 }

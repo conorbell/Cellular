@@ -4,7 +4,17 @@ import daisyui from 'daisyui'; // Import DaisyUI
 export default {
   content: ['./index.html', './components/**/*.{html, js, jsx}', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      sm: { max: '480px' },
+      md: { max: '768px' },
+      lg: { max: '1024px' },
+      xl: { max: '1280px' },
+    },
     extend: {
+      backgroundColor: {
+        'gray-button': 'rgba(65, 69, 73, 0.68)',
+      },
+
       colors: {
         blue1: '#0000ff',
       },
