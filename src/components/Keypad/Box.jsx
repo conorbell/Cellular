@@ -85,55 +85,17 @@ export const Box = (props) => {
       duration: 1.002,
       repeat: -1,
       ease: 'sine.in',
-      // stagger: {
-      //   grid: [3, 4],
-      //   amount: 1.5,
-      //   axis: 'x',
-      //   from: 'end',
-      // },
+      stagger: {
+        grid: [3, 4],
+        amount: 0.3,
+        axis: 'x',
+        from: 'end',
+      },
     });
   }
 
   useGSAP(() => {
-    if (!animationPlayed) {
-      // floating buttons
-      gsap.fromTo(
-        '#button-1',
-        {
-          x: -100, // Start from left
-          y: 200,
-        },
-        {
-          x: 0,
-          y: 0,
-
-          duration: 0.4,
-          ease: 'sine.inOut',
-        },
-      );
-
-      gsap.fromTo(
-        '#button-2',
-        {
-          x: 100, // Start from right
-          y: 0,
-          opacity: 0,
-        },
-        {
-          x: 0,
-          y: 0,
-          opacity: 1,
-          duration: 0.4,
-          ease: 'sine.inOut',
-        },
-      );
-
-      // Adjust initial positions, delays, and ease for other buttons accordingly
-
-      setAnimationPlayed(true);
-    } else {
-      bounce();
-    }
+    bounce();
   });
 
   const generateButtonId = (content) => {

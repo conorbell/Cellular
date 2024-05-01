@@ -45,7 +45,7 @@ export const About = () => {
       }
     };
     // Define the animations in a timeline
-    tl.to('#one', { y: 20, duration: 1.4, text: 'Hello' })
+    tl.to('#one', { y: 20, x: -70, duration: 1.4, text: 'Hello' })
       .to('#two', { x: -30, duration: 1.2, text: 'My Name is Alice' })
       .to('#three', { x: 40, duration: 2, text: 'and I am the admin' })
       .to('#four', { y: -40, duration: 1.9, text: 'of thecellular' })
