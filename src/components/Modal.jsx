@@ -1,7 +1,7 @@
 export default function Modal({ movie, context, festival }) {
   return (
     <section className="fixed  inset-0 flex justify-center items-center bg-black bg-opacity-50">
-      <div className="relative w-full max-w-[640px] bg-white shadow-lg md:rounded-lg">
+      <div className="relative w-full max-w-[640px] bg-gray-800 shadow-lg md:rounded-lg">
         {/* Video Section */}
         <div className="w-full">
           <iframe
