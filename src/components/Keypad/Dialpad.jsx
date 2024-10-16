@@ -3,6 +3,7 @@ import gsap from 'gsap/gsap-core.js';
 import { useGSAP } from '@gsap/react';
 import { Row } from './Row.jsx';
 import useSound from 'use-sound';
+// import videoBg from '../../assets/video/desktop_bg.mp4';
 
 // import { PiPhoneFill } from 'react-icons/pi';
 import { useMovie } from '../../functions/filmContext.jsx';
@@ -64,7 +65,7 @@ export const Dialpad = () => {
 
   return (
     <>
-      <section className="dial-container w-full  mx-auto items-center md:w-full md:mx-[5%] ">
+      <section className="dial-container w-[100vw] items-center md:w-full md:mx-[5%] ">
         <div className=" dialpad h-[76vh] items-center ml-16 grid grid-rows-5 gap-2 mx-auto mt-10 w-auto sm:mx-[2%] sm:ml-0">
           {keyPad.map((num, i) => (
             <Row

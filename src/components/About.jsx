@@ -82,7 +82,7 @@ export const About = () => {
   // const five = ;
 
   return (
-    <div className=" m-auto mt-10 flex flex-col gap-20 items-center font-Rounded text-black w-[70%]">
+    <div className=" m-auto mt-10 flex flex-col gap-20 items-center font-Rounded text-[#03A062] text-2xl w-[70%]">
       <h1 id="one"></h1>
 
       <h1 className="pr-[50%]" id="two"></h1>
