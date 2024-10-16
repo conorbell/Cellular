@@ -24,7 +24,7 @@ export const TextAnimation = () => {
   });
 
   return (
-    <div className="m-auto mt-10 flex flex-col gap-20 items-center font-Rounded text-[#03A062] text-2xl w-[70%] sm:gap-10 sm:text-xl">
+    <div className="m-auto mt-10 flex flex-col gap-20 items-center font-Rounded text-[#008f11] font-medium text-2xl w-[70%] sm:gap-10 sm:text-xl">
       <h1 id="one"></h1>
       <h1 className="pr-[50%]" id="two"></h1>
       <h1 className="pr-[43%]" id="three"></h1>
