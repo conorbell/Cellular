@@ -1,11 +1,9 @@
-import { useState, useEffect, useRef, Suspense, lazy } from 'react';
+import { useState, useRef, Suspense, lazy } from 'react';
 import gsap from 'gsap/gsap-core.js';
 import { useGSAP } from '@gsap/react';
 import { Row } from './Row.jsx';
 import useSound from 'use-sound';
-// import videoBg from '../../assets/video/desktop_bg.mp4';
 
-// import { PiPhoneFill } from 'react-icons/pi';
 import { useMovie } from '../../functions/filmContext.jsx';
 
 gsap.registerPlugin(useGSAP);
@@ -53,16 +51,6 @@ export const Dialpad = () => {
     setOpenModal(false);
   };
 
-  // useEffect(() => {
-  //   const handleCloseModalOutside = (event) => {
-  //     if (openModal) {
-  //       document.addEventListener('mousedown', handleModalClose);
-  //     }
-  //   };
-
-  //   handleCloseModalOutside();
-  // }, [openModal]);
-
   return (
     <>
       <section className="dial-container w-[100vw] items-center md:w-full md:mx-[5%] ">
@@ -94,9 +82,9 @@ export const Dialpad = () => {
             {/* Close button */}
             <button
               onClick={handleModalClose}
-              className="absolute top-0 right-0  pr-7 pt-2 text-3xl text-white font-bold rounded-full"
+              className="fixed top-4 right-4 z-50 text-3xl text-white  font-bold rounded-full bg-slate-400 bg-opacity-[0.45]  w-10 h-10 flex justify-center items-center"
             >
-              Return
+              X
             </button>
           </div>
         )}
