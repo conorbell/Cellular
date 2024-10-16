@@ -20,6 +20,7 @@ function App() {
     <>
       <MovieProvider>
         <RouterProvider router={router} />
+
         <div className="background-video">
           <video
             src={isMobile ? mobileVideo : desktopVideo}
@@ -31,6 +32,7 @@ function App() {
             controls={false}
           />
         </div>
+        <div className="video-overlay"></div>
       </MovieProvider>
     </>
   );

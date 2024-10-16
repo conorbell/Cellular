@@ -26,7 +26,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: -1; /* Ensure the video stays behind other content */
+  z-index: -1; /* Ensure t
+  he video stays behind other content */
 }
 
 .background-video video {
