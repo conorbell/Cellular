@@ -21,7 +21,15 @@ function App() {
       <MovieProvider>
         <RouterProvider router={router} />
         <div className="background-video">
-          <video src={isMobile ? mobileVideo : desktopVideo} autoPlay loop playsInline muted />
+          <video
+            src={isMobile ? mobileVideo : desktopVideo}
+            autoPlay
+            loop
+            playsInline
+            muted
+            preload="auto"
+            controls={false}
+          />
         </div>
       </MovieProvider>
     </>
